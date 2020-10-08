@@ -10,14 +10,94 @@
       rel="stylesheet"
     />
     <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/form.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <title>Document</title>
   </head>
   <body>
-    <form class="js-speaker-form">
-      <input type="text" name="user-name" />
+    <form class="form js-speaker-form">
+      <div class="form-element">
+        <label for="name">Имя</label>
+        <input
+          type="text"
+          name="user-name"
+          id="name"
+          placeholder="Семен Семеныч"
+        />
+      </div>
+
+      <div class="form-element">
+        <label for="tel">Телефон</label>
+        <input type="tel" name="tel" id="tel" placeholder="+380 ** 00-00-000" />
+      </div>
+
+      <div class="form-element">
+        <label for="mail">Почта</label>
+        <input type="email" name="mail" id="mail" placeholder="email" />
+      </div>
+      <div role="group">
+        <h2 class="group-title">Тема доклада</h2>
+        <ul class="topic-options">
+          <li>
+            <input
+              type="checkbox"
+              name="topic"
+              value="html"
+              id="html"
+              checked
+            />
+            <label for="html">HTML</label>
+          </li>
+          <li>
+            <input type="checkbox" name="topic" value="css" id="css" checked />
+            <label for="css">CSS</label>
+          </li>
+          <li>
+            <input type="checkbox" name="topic" value="js" id="js" />
+            <label for="js">JavaScript</label>
+          </li>
+        </ul>
+      </div>
+
+      <div role="group">
+        <h2 class="group-title">Уровень компетенции</h2>
+        <ul class="topic-options flexrow">
+          <li>
+            <label for="junior">Junior</label>
+            <input type="radio" name="exp" value="junior" id="junior" checked />
+          </li>
+          <li>
+            <label for="middle">Middle</label>
+            <input type="radio" name="exp" value="middle" id="middle" />
+          </li>
+          <li>
+            <label for="senior">Senior</label>
+            <input type="radio" name="exp" value="senior" id="senior" />
+          </li>
+        </ul>
+      </div>
+
+      <label for="js">Загрузить свой файл</label>
+      <input type="file" name="pdf" id="pdf" />
+      <br />
+
+      <textarea
+        name="comment"
+        id="comment"
+        cols="50"
+        rows="8"
+        placeholder="Уточните детали"
+      ></textarea>
+      <br />
+
+      <label for="policy">Согласен на все. за еду</label>
+      <input type="checkbox" name="policy" id="policy" />
+
+      <br /><br />
+      <button type="submit">Оставить заявку</button>
+      <!--  -->
     </form>
+
     <script>
       (() => {
         document

@@ -1,0 +1,37 @@
+.form {
+  width: 600px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-top: 20px;
+}
+.form-element {
+  outline: 1px solid teal;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-element input {
+  margin: 0;
+  padding: 6px 10px;
+}
+.group-title {
+  margin: 0;
+}
+.topic-options {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.topic-options input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+}
+
+.flexrow {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+}
