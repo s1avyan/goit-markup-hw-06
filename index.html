@@ -16,6 +16,24 @@
   </head>
   <body>
     <header>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Оставьте свои данные, мы вам перезвоним</h2>
+          <form class="modalForm" action="post" autocomplete="on">
+            <input type="text" id="name" />
+            <label for="name">Имя</label>
+
+            <input type="number" id="phone" />
+            <label for="phone">Телефон</label>
+
+            <input type="email" id="email" />
+            <label for="email">Почта</label>
+            <textarea type="text" id="comment" rows="8"></textarea>
+            <label for="comment">Комментарий</label>
+          </form>
+        </div>
+      </div>
       <div class="container">
         <nav>
           <div class="nav">
@@ -29,7 +47,7 @@
             </ul>
           </div>
           <address>
-            <a class="contact" href="mailto:info@devstudio.com"
+            <a class="contact" id="myBtn" href="mailto:info@devstudio.com"
               ><svg class="icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-email"></use>
               </svg>
@@ -51,9 +69,7 @@
       <!-- Гейрой -->
       <section class="hero">
         <div class="wrap">
-          <h1>
-            Эффективные решения для вашего бизнеса
-          </h1>
+          <h1>Эффективные решения для вашего бизнеса</h1>
           <a href="">Заказать услугу</a>
         </div>
       </section>
@@ -392,5 +408,6 @@
       <p class="copyrigths">2020 | Developed by s1avyan</p>
       -->
     </footer>
+    <script src="./js/s1avyan.js"></script>
   </body>
 </html>
