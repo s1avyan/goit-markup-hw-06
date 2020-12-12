@@ -18,19 +18,28 @@
     <header>
       <div id="myModal" class="modal">
         <div class="modal-content">
-          <span class="close">&times;</span>
+          <div class="close">
+            <svg class="modal_icon modal_icon_close" width="10" height="10">
+              <use href="./images/modal_svg.svg#icon-modal_close"></use>
+            </svg>
+          </div>
           <h2>Оставьте свои данные, мы вам перезвоним</h2>
           <form class="modalForm" action="post" autocomplete="on">
-            <input type="text" id="name" />
             <label for="name">Имя</label>
+            <input type="text" id="name" />
 
-            <input type="number" id="phone" />
             <label for="phone">Телефон</label>
+            <input type="number" id="phone" />
 
-            <input type="email" id="email" />
             <label for="email">Почта</label>
-            <textarea type="text" id="comment" rows="8"></textarea>
+            <input type="email" id="email" />
             <label for="comment">Комментарий</label>
+            <textarea
+              type="text"
+              id="comment"
+              rows="8"
+              placeholder="Введите текст"
+            ></textarea>
           </form>
         </div>
       </div>
