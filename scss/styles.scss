@@ -637,7 +637,33 @@ section li {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.modalForm input {
+input.privacy {
+  height: 16px;
+  margin: 0 5px 0 0;
+}
+.modal-content label.privacy {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 14px;
+  // vertical-align: middle;
+  // text-align: center;
+}
+.buttonSubmit {
+  height: 50px;
+  width: 200px;
+  background-color: var(--active-text-color);
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.buttonSubmit:hover {
+  cursor: pointer;
+  border-radius: 16px;
+}
+.input {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -651,6 +677,7 @@ section li {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 12px 16px;
+  resize: none;
 }
 .modalForm label {
   padding: 10px 0 4px 0;

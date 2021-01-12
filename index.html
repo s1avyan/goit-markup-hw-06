@@ -5,8 +5,9 @@
     <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- css -->
@@ -16,6 +17,7 @@
   </head>
   <body>
     <header>
+      <!-- Форма -->
       <div id="myModal" class="modal">
         <div class="modal-content">
           <div class="close">
@@ -24,25 +26,38 @@
             </svg>
           </div>
           <h2>Оставьте свои данные, мы вам перезвоним</h2>
+
           <form class="modalForm" action="post" autocomplete="on">
             <label for="name">Имя</label>
-            <input type="text" id="name" />
+            <input class="input" type="text" id="name" />
 
             <label for="phone">Телефон</label>
-            <input type="number" id="phone" />
+            <input class="input" type="number" id="phone" />
 
             <label for="email">Почта</label>
-            <input type="email" id="email" />
+            <input class="input" type="email" id="email" />
             <label for="comment">Комментарий</label>
             <textarea
               type="text"
               id="comment"
-              rows="8"
+              rows="6"
               placeholder="Введите текст"
             ></textarea>
+            <label class="privacy" for="privacy">
+              <input
+                class="privacy"
+                type="checkbox"
+                name="privacy"
+                id="privacy"
+              />
+              Соглашаюсь с рассылкой и принимаю
+              <a href="http://">Условия договора</a>
+            </label>
+            <button class="buttonSubmit" type="submit">Отправить</button>
           </form>
         </div>
       </div>
+      <!-- /Форма -->
       <div class="container">
         <nav>
           <div class="nav">
