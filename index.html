@@ -18,7 +18,7 @@
   <body>
     <header>
       <!-- Форма -->
-      <div id="myModal" class="modal">
+      <div id="myModal" data-modal class="modal">
         <div class="modal-content">
           <div class="close">
             <svg class="modal_icon modal_icon_close" width="10" height="10">
@@ -58,6 +58,7 @@
         </div>
       </div>
       <!-- /Форма -->
+
       <div class="container">
         <nav>
           <div class="nav">
@@ -71,17 +72,17 @@
             </ul>
           </div>
           <address>
-            <a class="contact" id="myBtn" href="mailto:info@devstudio.com"
+            <a class="contact" href="mailto:info@devstudio.com"
               ><svg class="icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-email"></use>
               </svg>
-              info@devstudio.com</a
+              info@studio.com</a
             >
             <a class="contact" href="tel:+380961111111">
               <svg class="icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-mobile"></use>
               </svg>
-              +38 096 111 11 11</a
+              +38 096 123 67 45</a
             >
           </address>
         </nav>
@@ -94,7 +95,7 @@
       <section class="hero">
         <div class="wrap">
           <h1>Эффективные решения для вашего бизнеса</h1>
-          <a href="">Заказать услугу</a>
+          <button id="myBtn" class="order-service">Заказать услугу</button>
         </div>
       </section>
 
@@ -432,6 +433,7 @@
       <p class="copyrigths">2020 | Developed by s1avyan</p>
       -->
     </footer>
+    <script src="./js/modal.js"></script>
     <script src="./js/s1avyan.js"></script>
   </body>
 </html>
