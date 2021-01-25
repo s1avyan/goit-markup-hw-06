@@ -95,6 +95,10 @@ h2 {
           flex-direction: column;
 }
 
+.none {
+  display: none;
+}
+
 header {
   height: 80px;
   background-color: #ffffff;
@@ -460,9 +464,9 @@ footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -502,6 +506,10 @@ footer .row > * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.subscribe-social {
+  margin-left: 70px;
 }
 
 .subscribe-social .row {
@@ -565,16 +573,6 @@ footer .row > * {
   padding-left: 12px;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
-}
-
-.subscribe-telegram {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .subscribe-link {
