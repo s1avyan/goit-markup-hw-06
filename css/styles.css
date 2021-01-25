@@ -198,6 +198,11 @@ header .icon:focus {
           transform: scaleX(1);
 }
 
+.active {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 header .contact {
   padding-left: 50px;
   color: var(--primary-text-color);

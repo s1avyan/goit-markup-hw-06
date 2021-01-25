@@ -165,6 +165,9 @@ header .icon:focus {
   content: "";
   transform: scaleX(1);
 }
+.active {
+  transform: scaleX(1);
+}
 header .contact {
   padding-left: 50px;
   color: var(--primary-text-color);
