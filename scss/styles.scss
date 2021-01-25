@@ -165,8 +165,11 @@ header .icon:focus {
   content: "";
   transform: scaleX(1);
 }
-.active {
+.active::after {
   transform: scaleX(1);
+}
+.active {
+  color: var(--active-text-color);
 }
 header .contact {
   padding-left: 50px;
@@ -194,7 +197,10 @@ section {
   background-color: var(--background-color-main);
 }
 main .container {
-  padding: 94px 0;
+  padding: 47px 0;
+}
+.vh {
+  height: 60vh;
 }
 // гейрой
 .hero {
